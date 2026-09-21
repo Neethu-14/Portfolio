@@ -1,5 +1,4 @@
 import React from 'react';
-import avatarSvg from '../assets/images/avatar-card.svg';
 
 export default function About() {
   return (
@@ -14,7 +13,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-media reveal reveal-delay-1" id="aboutMediaBox">
             <img
-              src={avatarSvg}
+              src="/images/profile.jpg"
               alt="Neethu Chauhan — Computer Science Engineering Student"
             />
             <div className="frame-tag">CS Engineering</div>
