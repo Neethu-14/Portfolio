@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ragGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151619"/>
+      <stop offset="100%" stop-color="#0B0C0E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ragGrad)"/>
+
+  <rect x="80" y="60" width="640" height="330" rx="10" fill="#1C1D21" stroke="rgba(199,154,91,0.3)" stroke-width="1.5"/>
+  <rect x="80" y="60" width="640" height="40" rx="10" fill="#151619"/>
+  <circle cx="105" cy="80" r="5" fill="#D9695F"/>
+  <circle cx="125" cy="80" r="5" fill="#C79A5B"/>
+  <circle cx="145" cy="80" r="5" fill="#77B58A"/>
+  <text x="175" y="84" fill="#9A968C" font-family="monospace" font-size="12">RAG_AI_CUSTOMER_SUPPORT // CHROMADB_OLLAMA_LLM</text>
+
+  <!-- Vector pipeline graphic -->
+  <rect x="110" y="120" width="160" height="60" rx="6" fill="#151619" stroke="#C79A5B"/>
+  <text x="125" y="145" fill="#C79A5B" font-family="monospace" font-size="11">User Query</text>
+  <text x="125" y="165" fill="#F3EFE7" font-family="sans-serif" font-size="11">"How do I reset keys?"</text>
+
+  <line x1="270" y1="150" x2="330" y2="150" stroke="#C79A5B" stroke-width="2" stroke-dasharray="4"/>
+
+  <rect x="330" y="120" width="160" height="60" rx="6" fill="#151619" stroke="#77B58A"/>
+  <text x="345" y="145" fill="#77B58A" font-family="monospace" font-size="11">ChromaDB Vector</text>
+  <text x="345" y="165" fill="#F3EFE7" font-family="sans-serif" font-size="11">Top-3 Embedding Chunks</text>
+
+  <line x1="490" y1="150" x2="540" y2="150" stroke="#77B58A" stroke-width="2" stroke-dasharray="4"/>
+
+  <rect x="540" y="120" width="150" height="60" rx="6" fill="#151619" stroke="#C79A5B"/>
+  <text x="555" y="145" fill="#C79A5B" font-family="monospace" font-size="11">Ollama LLM</text>
+  <text x="555" y="165" fill="#F3EFE7" font-family="sans-serif" font-size="11">Context Synthesis</text>
+
+  <!-- Chat conversation box -->
+  <rect x="110" y="200" width="580" height="165" rx="6" fill="#151619" stroke="rgba(243,239,231,0.08)"/>
+  
+  <rect x="130" y="220" width="340" height="36" rx="6" fill="#1C1D21"/>
+  <text x="145" y="242" fill="#F3EFE7" font-family="sans-serif" font-size="12">Customer: How do I configure API webhook retries?</text>
+
+  <rect x="230" y="270" width="440" height="75" rx="6" fill="rgba(199,154,91,0.12)" stroke="rgba(199,154,91,0.3)"/>
+  <text x="245" y="295" fill="#C79A5B" font-family="monospace" font-size="11">AI Assistant (Synthesized with KB):</text>
+  <text x="245" y="318" fill="#F3EFE7" font-family="sans-serif" font-size="12">"According to Section 4.2: Webhooks use exponential backoff with a</text>
+  <text x="245" y="336" fill="#F3EFE7" font-family="sans-serif" font-size="12">maximum of 5 retry cycles before pushing to the Dead Letter Queue."</text>
+</svg>
